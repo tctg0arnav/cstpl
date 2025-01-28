@@ -1,0 +1,61 @@
+* {
+    font-family: "League Gothic", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    z-index: 1;
+}
+.sec1{
+    background: url('./assets/bg1.png');
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.navbar {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    font-size: 2.5em;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    position: absolute;
+    color: white;
+}
+.navbar .logo{
+    display: flex;
+    width: 15vw;
+    height: 10vh;
+    align-items: center;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+.navbar .text{
+    display: flex;
+    flex-direction: row;
+    width: 35vw;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar .socials {
+    display: flex;
+    width: 15vw;
+    height: 10vh;
+    align-items: center;
+    padding-right: 50px;
+    justify-content: space-between;
+    transform: scale(0.9);
+}
+.navbar .socials .b1{
+    background-color: blue;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
