@@ -179,7 +179,6 @@ html body{
     opacity: 12%;
     transform: translateX(-8%);
 }
-
 .sec4{
     height: 85vh;
     width: 100vw;
@@ -259,3 +258,7 @@ html body{
     background: transparent;
     margin: 0 500px; /* Reduce the scrollbar's visible width */
   }
+.t2 {
+    font-family: "Sofia Sans Extra Condensed", serif;
+}
+
