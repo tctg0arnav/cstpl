@@ -215,12 +215,18 @@ html body{
     display: flex;
     align-items: center;
     overflow-x: scroll;
-    flex-shrink: 0;padding-bottom: 5vh;
+    flex-shrink: 0;
+    padding:5vh;
 }
 .sec4 .articles .box{
     background-color: white;
     margin-right: 4vw;
     min-width: 18vw;
+}
+.sec4 .articles .box:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: pointer;
 }
 .sec4 .articles .box img{
     width: 100%;
@@ -258,6 +264,10 @@ html body{
     background: transparent;
     margin: 0 500px; /* Reduce the scrollbar's visible width */
   }
+
+
+
+
 .t2 {
     font-family: "Sofia Sans Extra Condensed", serif;
 }
