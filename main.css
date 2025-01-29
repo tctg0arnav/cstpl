@@ -179,7 +179,86 @@ html body{
     opacity: 12%;
     transform: translateX(-8%);
 }
+.sec4{
+    height: 85vh;
+    width: 100vw;
+    background-color: #76D0D3;
+    display: flex;
+}
+.sec4 .text{
+    height: 85vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5vw;
+    
+}
+.sec4 .text .t1{
+    font-size: 5em;
+    line-height: 85%;
+}
+.sec4 .text .t2{
+    font-size: 2.5em;
+}
+.sec4 .articles{
+    height: 85vh;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    flex-shrink: 0;
+}
+.sec4 .articles .scroll{
+    height: fit-content;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    flex-shrink: 0;padding-bottom: 5vh;
+}
+.sec4 .articles .box{
+    background-color: white;
+    margin-right: 4vw;
+    min-width: 18vw;
+}
+.sec4 .articles .box img{
+    width: 100%;
+}
+.sec4 .articles .box .bt {
+    padding: 10px;
+}
+.sec4 .articles .box .bt .h{
+    font-size: 2.2em;
+    color: #E0B900;
+    
+}
+.sec4 .articles .box .bt .t{
+    font-size: 1.8em;
+    
+}
+.sec4 .articles .box .bt .f{
+    color: #F5821F;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.scroll::-webkit-scrollbar {
+    height: 8px;
+    width: 40%;
+    background: transparent;
+}
 
+.scroll::-webkit-scrollbar-thumb {
+    background: #F5821F;
+    -webkit-border-radius: 1ex;
+}
+
+.scroll::-webkit-scrollbar-track {
+    background: transparent;
+    margin: 0 500px; /* Reduce the scrollbar's visible width */
+  }
 .t2 {
     font-family: "Sofia Sans Extra Condensed", serif;
 }
+
