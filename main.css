@@ -94,6 +94,10 @@ html body{
     width: 30px;
     cursor: pointer;
 }
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
 .sec2{
     height: 70vh;
     width:100vw;
@@ -180,13 +184,13 @@ html body{
     transform: translateX(-8%);
 }
 .sec4{
-    height: 85vh;
+    height: 60vh;
     width: 100vw;
     background-color: #76D0D3;
     display: flex;
 }
 .sec4 .text{
-    height: 85vh;
+    height: 60vh;
     width: 30vw;
     display: flex;
     flex-direction: column;
@@ -202,7 +206,7 @@ html body{
     font-size: 2.5em;
 }
 .sec4 .articles{
-    height: 85vh;
+    height: 60vh;
     width: 70vw;
     display: flex;
     align-items: center;
