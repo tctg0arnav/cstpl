@@ -253,6 +253,16 @@ html body{
     font-weight: 400;
     margin-top: 10px;
 }
+
+.sec4 .text .bgtext{
+    font-size: 20em;
+    position: absolute;
+    z-index: 1;
+    color: #0B0A08;
+    opacity: 12%;
+    transform: translateX(-8%);
+}
+
 .scroll::-webkit-scrollbar {
     height: 8px;
     width: 40%;
@@ -299,6 +309,49 @@ html body{
     display: block;
     justify-content: center;
     align-self: center;
+}
+
+.sec6{
+    height: 70vh;
+    width: 100vw;
+    background-color: #F5821F;
+    display: flex;
+}
+.sec6 .text{
+    position: absolute;
+    right:0;
+    width: 40vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;    
+}
+.sec6 .text .t1{
+    font-size: 5em;
+    z-index: 3;
+}
+.sec6 .text .t2{
+    width: 30vw;
+    font-size: 2.5em;
+    z-index: 3;
+}
+.sec6 .text .bgtext{
+    font-size: 27em;
+    position: absolute;
+    z-index: 1;
+    color: #0B0A08;
+    opacity: 12%;
+    transform: translateX(-8%);
+}
+
+.sec6 .typeform{
+    height: 100%;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10vw;
 }
 
 .t2 {
