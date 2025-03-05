@@ -95,7 +95,7 @@ html body{
     cursor: pointer;
 }
 .navbar a{
-    color: white;
+    color: black;
     text-decoration: none;
 }
 .sec2{
@@ -253,6 +253,16 @@ html body{
     font-weight: 400;
     margin-top: 10px;
 }
+
+.sec4 .text .bgtext{
+    font-size: 20em;
+    position: absolute;
+    z-index: 1;
+    color: #0B0A08;
+    opacity: 12%;
+    transform: translateX(-8%);
+}
+
 .scroll::-webkit-scrollbar {
     height: 8px;
     width: 40%;
@@ -269,8 +279,80 @@ html body{
     margin: 0 500px; /* Reduce the scrollbar's visible width */
   }
 
+.sec5{
+    height: 90vh;
+    width: 100vw;
+    background-color: #E0B900;
+    align-items: center;
+}
+.sec5 .text{
+    height: 10vh;
+    width: 100vw;
+    display:block;
+    justify-content: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    text-align: center;
+    
+}
+.sec5 .text .t1{
+    font-size: 5em;
+    line-height: 85%;
+}
+.sec5 .text .t2{
+    font-size: 2.5em;
+}
 
+.sec5 .ytembed{
+    height: 72.5%;
+    width: 60%;
+    display: block;
+    justify-content: center;
+    align-self: center;
+}
 
+.sec6{
+    height: 70vh;
+    width: 100vw;
+    background-color: #F5821F;
+    display: flex;
+}
+.sec6 .text{
+    position: absolute;
+    right:0;
+    width: 40vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;    
+}
+.sec6 .text .t1{
+    font-size: 5em;
+    z-index: 3;
+}
+.sec6 .text .t2{
+    width: 30vw;
+    font-size: 2.5em;
+    z-index: 3;
+}
+.sec6 .text .bgtext{
+    font-size: 27em;
+    position: absolute;
+    z-index: 1;
+    color: #0B0A08;
+    opacity: 12%;
+    transform: translateX(-8%);
+}
+
+.sec6 .typeform{
+    height: 100%;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10vw;
+}
 
 .t2 {
     font-family: "Sofia Sans Extra Condensed", serif;
