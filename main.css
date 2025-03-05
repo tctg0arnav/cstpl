@@ -269,8 +269,37 @@ html body{
     margin: 0 500px; /* Reduce the scrollbar's visible width */
   }
 
+.sec5{
+    height: 90vh;
+    width: 100vw;
+    background-color: #E0B900;
+    align-items: center;
+}
+.sec5 .text{
+    height: 10vh;
+    width: 100vw;
+    display:block;
+    justify-content: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    text-align: center;
+    
+}
+.sec5 .text .t1{
+    font-size: 5em;
+    line-height: 85%;
+}
+.sec5 .text .t2{
+    font-size: 2.5em;
+}
 
-
+.sec5 .ytembed{
+    height: 72.5%;
+    width: 60%;
+    display: block;
+    justify-content: center;
+    align-self: center;
+}
 
 .t2 {
     font-family: "Sofia Sans Extra Condensed", serif;
