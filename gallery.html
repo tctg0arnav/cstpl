@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="bg">    
+        <div class="l"></div>
+        <div class="r"></div>
+    </div>
+    <div class="h">
+        <h1>Photo Gallery</h1>
+    </div class="h">
+
+    <main class="gallery-container">
+
+        <div class="gallery">
+            <!-- Gallery Item 1 -->
+            <div class="gallery-item">
+                <img src="./assets/img3.jpeg" alt="Sunset over mountain lake with pine trees">
+                <div class="image-caption">
+                    <h3 class="image-title">Mountain Sunset</h3>
+                    <p class="image-description">Beautiful sunset over a mountain lake</p>
+                </div>
+            </div>
+
+            <!-- Gallery Item 2 -->
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e" alt="Coastal cliff with ocean view">
+                <div class="image-caption">
+                    <h3 class="image-title">Coastal View</h3>
+                    <p class="image-description">Dramatic coastline with crashing waves</p>
+                </div>
+            </div>
+
+            <!-- Gallery Item 3 -->
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131" alt="Cat sitting on a windowsill">
+                <div class="image-caption">
+                    <h3 class="image-title">Window Cat</h3>
+                    <p class="image-description">A curious cat enjoying the view</p>
+                </div>
+            </div>
+
+            <!-- Gallery Item 4 -->
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8" alt="Modern building with glass facade">
+                <div class="image-caption">
+                    <h3 class="image-title">Modern Architecture</h3>
+                    <p class="image-description">Contemporary building design with glass elements</p>
+                </div>
+            </div>
+
+            <!-- Gallery Item 5 -->
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327" alt="Gourmet meal on a plate">
+                <div class="image-caption">
+                    <h3 class="image-title">Gourmet Dish</h3>
+                    <p class="image-description">Expertly prepared culinary creation</p>
+                </div>
+            </div>
+
+            <!-- Gallery Item 6 -->
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a" alt="Ancient temple at sunset">
+                <div class="image-caption">
+                    <h3 class="image-title">Ancient Temple</h3>
+                    <p class="image-description">Historic architecture from a bygone era</p>
+                </div>
+            </div>
+
+            <!-- Gallery Item 7 -->
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b" alt="Tropical beach with palm trees">
+                <div class="image-caption">
+                    <h3 class="image-title">Tropical Paradise</h3>
+                    <p class="image-description">White sand beach with crystal clear water</p>
+                </div>
+            </div>
+
+            <!-- Gallery Item 8 -->
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Colorful plate of fresh fruits">
+                <div class="image-caption">
+                    <h3 class="image-title">Fresh Harvest</h3>
+                    <p class="image-description">Colorful assortment of seasonal fruits</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Simple filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // In a real implementation, you would filter the gallery items here
+                    // This is just a visual demo of the filter buttons
+                });
+            });
+        });
+    </script>
+</body>
+</html>

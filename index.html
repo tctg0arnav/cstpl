@@ -8,9 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    
 <body>
     <div class="sec1" id="Home">
-        <div class="bg">
+        <div class="bg">    
             <div class="l"></div>
             <div class="r"></div>
         </div>
@@ -24,7 +25,7 @@
                 <div class="heading"><a href="#About">About</a></div>
                 <div class="heading"><a href="#Team">Team</a></div>
                 <div class="heading"><a href="#News">News</a></div>
-                <div class="heading"><a href="#News">Gallery</a></div>
+                <div class="heading"><a href="gallery.html">Gallery</a></div>
 
             </div>
             <div class="socials">
@@ -43,6 +44,12 @@
             </div>
         </div>
     </div>
+    <!-- <div class="sponsors">
+        <div class="t1">Our Sponsors</div>
+        <div class="sponsors-list">
+            nyooom
+        </div>
+    </div> -->
     <div class="sec2" id="About">
         <div class="text">
             <div class="bgtext">ABOUT</div>
@@ -55,7 +62,29 @@
                 </div>
             </div>
         </div>
-        <div class="thingy"></div>
+        <div class="thingy container">
+                <div class="slider">
+                  <div class="slider-content">
+                    <figure class="show">
+                      <img src="./assets/img1.jpeg" alt="Coffee">
+                    </figure>
+                    <figure>
+                      <img src="./assets/img2.jpeg" alt="Lamp">
+                    </figure>
+                    <figure>
+                      <img src="./assets/img3.jpeg" alt="Plant">
+                    </figure>
+                  </div>
+                  <div class="slider-navigation">
+                    <button>
+                      <i class="fa-solid fa-chevron-left"><<</i>
+                    </button>
+                    <button>
+                      <i class="fa-solid fa-chevron-right">>></i>
+                    </button>
+                  </div>
+                </div>
+        </div>
     </div>
     <div class="sec3" id="Team">
         <div class="text">
@@ -69,7 +98,29 @@
                 </div>
             </div>
         </div>
-        <div class="thingy"></div>
+        <div class="thingy container">
+            <div class="slider2">
+              <div class="slider-content2">
+                <figure class="show">
+                  <img src="./assets/img1.jpeg" alt="Coffee">
+                </figure>
+                <figure>
+                  <img src="./assets/img2.jpeg" alt="Lamp">
+                </figure>
+                <figure>
+                  <img src="./assets/img3.jpeg" alt="Plant">
+                </figure>
+              </div>
+              <div class="slider-navigation2">
+                <button>
+                  <i class="fa-solid fa-chevron-left"><<</i>
+                </button>
+                <button>
+                  <i class="fa-solid fa-chevron-right">>></i>
+                </button>
+              </div>
+            </div>
+    </div>
     </div>
     <div class="sec5" id="video" align="center">
         <div class="text">
@@ -147,5 +198,122 @@
             <div class="t1">Get in touch</div>
             <div class="t2">Have a question or feedback? Fill out the form to connect to our team.</div>
     </div>
+    <script>
+        var count = 0;
+        var directions = {
+        prev: 0,
+        next: 1
+        }
+
+        var prevButton = document.querySelector(".slider-navigation button:first-child");
+        console.log(prevButton)
+        var nextButton = document.querySelector(".slider-navigation button:last-child");
+        var sliders = document.querySelectorAll(".slider-content figure");
+        console.log(sliders)
+        initListeners();
+
+        function initListeners() {
+        nextButton.addEventListener("click", onNavigationClick);
+        prevButton.addEventListener("click", onNavigationClick);
+        }
+
+        function onNavigationClick(e) {
+        var currentButton = e.target;
+        var index = getElementIndex(e.target);
+        var controlledCount = countController(index);
+        
+        var oldSlideItem = sliders[controlledCount.old];
+        var newSlideItem = sliders[controlledCount.new];
+        
+        oldSlideItem.classList.remove("show");
+        currentButton.classList.add("disabled");
+        
+        var showNextSliderItemInterval = setInterval(function() {
+            newSlideItem.classList.add("show");
+            currentButton.classList.remove("disabled");
+            clearInterval(showNextSliderItemInterval);
+        }, 150);
+        }
+
+        function countController(directionIndex) {
+        var result = { new: 0, old: count };
+        var max = sliders.length;
+        
+        if(directionIndex === directions.next) {
+            count = count === max - 1 ? 0 : (count + 1);
+        }
+        
+        if(directionIndex === directions.prev) {
+            count = count === 0 ? (max - 1) : (count - 1);
+        }
+        
+        result.new = count;
+        
+        return result;
+        }
+
+        function getElementIndex(element) {
+        return Array.from(element.parentElement.children).indexOf(element);
+        }
+    </script>
+    <script>
+        var slideIndex = 0;
+var navigationDirections = {
+    backward: 0,
+    forward: 1
+};
+
+var previousBtn = document.querySelector(".slider-navigation2 button:first-child");
+console.log(previousBtn);
+var nextBtn = document.querySelector(".slider-navigation2 button:last-child");
+var slideItems = document.querySelectorAll(".slider-content2 figure");
+
+initializeEventListeners();
+
+function initializeEventListeners() {
+    nextBtn.addEventListener("click", handleNavigationClick);
+    previousBtn.addEventListener("click", handleNavigationClick);
+}
+
+function handleNavigationClick(event) {
+    var clickedButton = event.target;
+    var direction = getButtonIndex(event.target);
+    var updatedSlideIndex = updateSlideIndex(direction);
+    
+    var previousSlide = slideItems[updatedSlideIndex.old];
+    var newSlide = slideItems[updatedSlideIndex.new];
+    
+    previousSlide.classList.remove("show");
+    clickedButton.classList.add("disabled");
+    
+    var slideTransitionInterval = setInterval(function() {
+        newSlide.classList.add("show");
+        clickedButton.classList.remove("disabled");
+        clearInterval(slideTransitionInterval);
+    }, 150);
+}
+
+function updateSlideIndex(direction) {
+    var updatedIndices = { new: 0, old: slideIndex };
+    var totalSlides = slideItems.length;
+    
+    if (direction === navigationDirections.forward) {
+        slideIndex = slideIndex === totalSlides - 1 ? 0 : (slideIndex + 1);
+    }
+    
+    if (direction === navigationDirections.backward) {
+        slideIndex = slideIndex === 0 ? (totalSlides - 1) : (slideIndex - 1);
+    }
+    
+    updatedIndices.new = slideIndex;
+    
+    return updatedIndices;
+}
+
+function getButtonIndex(buttonElement) {
+    return Array.from(buttonElement.parentElement.children).indexOf(buttonElement);
+}
+
+    </script>
 </body>
 </html>
