@@ -122,7 +122,8 @@ h1 {
 
 .image-description {
     font-size: 0.9rem;
-    opacity: 0.9;
+    opacity: 0.9; 
+    font-family: "Sofia Sans Extra Condensed", serif;
 }
 
 /* Filter buttons */
