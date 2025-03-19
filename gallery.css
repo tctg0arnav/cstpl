@@ -54,13 +54,12 @@ html body{
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Ensures even spacing between images */
     padding: 5vh;
+    justify-content: space-evenly;
     padding-top: 15vh;
     margin: auto;
 }
 
 .container img {
     padding: 1vh;
-    width: calc(33.33% - 2%); /* Adjusted to use percentage for consistent spacing */
 }
