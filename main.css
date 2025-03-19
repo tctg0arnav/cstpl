@@ -110,10 +110,10 @@ html body{
     right: 0;
     background-color: #F5821F;
 
-    /* background: url('./assets/img1.jpeg');
+    background: url('./assets/chennai.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; */
+    background-position: center;
     height: 70vh;
     width: 61%;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%);
@@ -200,7 +200,7 @@ html body{
     right: 0;
     background-color: #F5821F;
 
-    background: url('./assets/img1.jpeg');
+    background: url('./assets/sonali.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -316,7 +316,7 @@ html body{
     transform: translateX(-8%);
 }
 
-.scroll::-webkit-scrollbar {
+/* .scroll::-webkit-scrollbar {
     height: 8px;
     width: 40%;
     background: transparent;
@@ -329,8 +329,8 @@ html body{
 
 .scroll::-webkit-scrollbar-track {
     background: transparent;
-    margin: 0 500px; /* Reduce the scrollbar's visible width */
-  }
+    margin: 0 500px;
+  } */
 
 .sec5{
     height: 90vh;
