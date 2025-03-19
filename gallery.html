@@ -3,118 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery</title>
+    <title>Chennai Smashers | Gallery</title>
     <link rel="stylesheet" href="gallery.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
-
-
+    <link rel="stylesheet" href="photoswipe.css">
 </head>
 <body>
-    <div class="bg">    
-        <div class="l"></div>
-        <div class="r"></div>
-    </div>
-    <div class="h">
-        <h1>Photo Gallery</h1>
-    </div class="h">
-
-    <main class="gallery-container">
-
-        <div class="gallery">
-            <!-- Gallery Item 1 -->
-            <div class="gallery-item">
-                <img src="./assets/img3.jpeg" alt="Sunset over mountain lake with pine trees">
-                <div class="image-caption">
-                    <h3 class="image-title">Mountain Sunset</h3>
-                    <p class="image-description">Beautiful sunset over a mountain lake</p>
-                </div>
-            </div>
-
-            <!-- Gallery Item 2 -->
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e" alt="Coastal cliff with ocean view">
-                <div class="image-caption">
-                    <h3 class="image-title">Coastal View</h3>
-                    <p class="image-description">Dramatic coastline with crashing waves</p>
-                </div>
-            </div>
-
-            <!-- Gallery Item 3 -->
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131" alt="Cat sitting on a windowsill">
-                <div class="image-caption">
-                    <h3 class="image-title">Window Cat</h3>
-                    <p class="image-description">A curious cat enjoying the view</p>
-                </div>
-            </div>
-
-            <!-- Gallery Item 4 -->
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8" alt="Modern building with glass facade">
-                <div class="image-caption">
-                    <h3 class="image-title">Modern Architecture</h3>
-                    <p class="image-description">Contemporary building design with glass elements</p>
-                </div>
-            </div>
-
-            <!-- Gallery Item 5 -->
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327" alt="Gourmet meal on a plate">
-                <div class="image-caption">
-                    <h3 class="image-title">Gourmet Dish</h3>
-                    <p class="image-description">Expertly prepared culinary creation</p>
-                </div>
-            </div>
-
-            <!-- Gallery Item 6 -->
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a" alt="Ancient temple at sunset">
-                <div class="image-caption">
-                    <h3 class="image-title">Ancient Temple</h3>
-                    <p class="image-description">Historic architecture from a bygone era</p>
-                </div>
-            </div>
-
-            <!-- Gallery Item 7 -->
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b" alt="Tropical beach with palm trees">
-                <div class="image-caption">
-                    <h3 class="image-title">Tropical Paradise</h3>
-                    <p class="image-description">White sand beach with crystal clear water</p>
-                </div>
-            </div>
-
-            <!-- Gallery Item 8 -->
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Colorful plate of fresh fruits">
-                <div class="image-caption">
-                    <h3 class="image-title">Fresh Harvest</h3>
-                    <p class="image-description">Colorful assortment of seasonal fruits</p>
-                </div>
-            </div>
+    <div class="navbar">
+        <div class="logo">
+            <img src="./assets/logo.webp" height="100px" width="100px" alt="">
         </div>
-    </main>
+        <div class="text">
+            <div class="heading"><a href="#Home">Home</a></div>
+            <div class="heading"><a href="#About">About</a></div>
+            <div class="heading"><a href="#Team">Team</a></div>
+            <div class="heading"><a href="#News">News</a></div>
+            <div class="heading"><a href="gallery.html">Gallery</a></div>
 
-    <script>
-        // Simple filter functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const filterButtons = document.querySelectorAll('.filter-btn');
-            
-            filterButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    // Remove active class from all buttons
-                    filterButtons.forEach(btn => btn.classList.remove('active'));
-                    
-                    // Add active class to clicked button
-                    this.classList.add('active');
-                    
-                    // In a real implementation, you would filter the gallery items here
-                    // This is just a visual demo of the filter buttons
-                });
-            });
+        </div>
+        <div class="socials">
+            <a href="https://www.youtube.com/@ChennaiSmashers/shorts" target="_blank"><svg width="64" height="46" viewBox="0 0 64 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M37.9158 23.25L27.4404 29.2359V17.2641L37.9158 23.25Z" fill="black" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 25.369V21.131C2 12.4664 2 8.13257 4.70863 5.34613C7.42025 2.55669 11.6882 2.43697 20.2211 2.19454C24.2616 2.08081 28.3919 2 31.9296 2C35.4673 2 39.5945 2.08081 43.638 2.19454C52.171 2.43697 56.4389 2.55669 59.1475 5.34613C61.8562 8.13556 61.8592 12.4694 61.8592 21.131V25.366C61.8592 34.0336 61.8592 38.3644 59.1505 41.1539C56.4389 43.9403 52.1739 44.063 43.638 44.3025C39.5975 44.4192 35.4673 44.5 31.9296 44.5C28.3919 44.5 24.2646 44.4192 20.2211 44.3025C11.6882 44.063 7.42025 43.9433 4.70863 41.1539C1.99701 38.3644 2 34.0306 2 25.369Z" stroke="black" stroke-width="3"/>
+            </svg></a>
+            <a href="https://x.com/ChennaiTPLoffl" target="_blank"><svg width="42" height="43" viewBox="0 0 42 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.7496 17.9961L40.2309 0H36.562L23.12 15.6254L12.3834 0H0L16.2357 23.6287L0 42.5H3.66895L17.8646 25.999L29.2028 42.5H41.5863L24.7486 17.9961H24.7496ZM19.7247 23.8365L18.0794 21.4838L4.99076 2.76184H10.626L21.1882 17.8713L22.8331 20.224L36.5636 39.8637H30.929L19.7247 23.8375V23.8365Z" fill="black"/>
+            </svg></a>
+            <a href="https://www.instagram.com/chennaismasherstpl/" target="_blank"><svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33.0499 2H13.4501C7.12577 2 2 7.12668 2 13.451V33.049C2 39.3733 7.12668 44.5 13.451 44.5H33.049C39.3733 44.5 44.5 39.3733 44.5 33.049V13.451C44.5 7.12668 39.3742 2 33.0499 2Z" stroke="black" stroke-width="3" stroke-miterlimit="10"/>
+                <path d="M23.2505 33.5088C28.9163 33.5088 33.5093 28.9157 33.5093 23.25C33.5093 17.5842 28.9163 12.9911 23.2505 12.9911C17.5847 12.9911 12.9917 17.5842 12.9917 23.25C12.9917 28.9157 17.5847 33.5088 23.2505 33.5088Z" stroke="black" stroke-width="3" stroke-miterlimit="10"/>
+                <path d="M35.7067 12.9912C36.9207 12.9912 37.9048 12.0071 37.9048 10.7931C37.9048 9.57918 36.9207 8.59507 35.7067 8.59507C34.4928 8.59507 33.5087 9.57918 33.5087 10.7931C33.5087 12.0071 34.4928 12.9912 35.7067 12.9912Z" fill="black"/>
+            </svg></a>
+        </div>
+    </div>
+    <div class="container" id="gallery">
+       <a href="https://placehold.co/600x400"
+       data-pswp-width="600"
+       data-pswp-height="400"
+       target="_blank">
+        <img src="https://placehold.co/600x400" alt="" width="30%">
+       </a>
+       <a href="https://placehold.co/600x400"
+       data-pswp-width="600"
+       data-pswp-height="400"
+       target="_blank">
+        <img src="https://placehold.co/600x400" alt="" width="30%">
+       </a>
+       <a href="https://placehold.co/600x400"
+       data-pswp-width="600"
+       data-pswp-height="400"
+       target="_blank">
+        <img src="https://placehold.co/600x400" alt="" width="30%">
+       </a>
+       <a href="https://placehold.co/600x400"
+       data-pswp-width="600"
+       data-pswp-height="400"
+       target="_blank">
+        <img src="https://placehold.co/600x400" alt="" width="30%">
+       </a>
+    </div>
+
+    <script type="module">
+        import PhotoSwipeLightbox from './photoswipe-lightbox.esm.min.js';
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '#gallery',
+            children: 'a',
+            pswpModule: () => import('./photoswipe.esm.min.js')
         });
+        lightbox.init();
     </script>
 </body>
 </html>
