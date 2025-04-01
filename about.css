@@ -9,11 +9,14 @@
     margin: 0;
     z-index: 1;
 }
-html, body{
+
+html{
     height: 100%;
 }
+
 html body{
-    background: #EDC81B;
+    background: #F5821F;
+    height: 100%;
 }
 
 .navbar {
@@ -25,8 +28,10 @@ html body{
     align-items: center;
     width: 100vw;
     position: fixed;
+    top: 0;
+    z-index: 1000;
     color: white;
-    z-index: 5;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0));
 }
 .navbar .logo{
     display: flex;
@@ -59,21 +64,10 @@ html body{
     width: 30px;
     cursor: pointer;
 }
+
 .navbar a{
     color: white;
     text-decoration: none;
-}
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5vh;
-    justify-content: space-evenly;
-    margin: auto;
-    zoom: 60%;
-}
-
-.container img {
-    padding: 1vh;
 }
 
 .hero-image {
@@ -93,4 +87,17 @@ html body{
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+}
+
+.container{
+    margin-top: 2vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    height: 50%;
+}
+
+.t1{
+    font-family: "Sofia Sans Extra Condensed", serif;
+    font-size: 5vh;
+    text-align: justify;
 }

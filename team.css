@@ -1,0 +1,228 @@
+* {
+    font-family: "League Gothic", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "width" 100;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+html{
+    height: 100%;
+}
+
+html body{
+    background: #F5821F;
+    height: 100%;
+}
+
+.navbar {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    font-size: 2.5em;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0));
+}
+.navbar .logo{
+    display: flex;
+    width: 15vw;
+    height: 10vh;
+    align-items: center;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+.navbar .text{
+    display: flex;
+    flex-direction: row;
+    width: 35vw;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar .socials {
+    display: flex;
+    width: 15vw;
+    height: 10vh;
+    align-items: center;
+    padding-right: 50px;
+    justify-content: space-between;
+    transform: scale(0.9);
+}
+.navbar .socials .b1{
+    background-color: blue;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.1), rgba(0, 0, 0, 0.8)), url("assets/img2.jpeg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    padding-top: 0vh;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.sec2{
+    height: 50VH;
+    width:100vw;
+    background-color: #EDC81B;
+}
+.sec2 .thingy{
+    position: absolute;
+    right: 0;
+    background-color: #F5821F;
+
+    background: url('./assets/chennai.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50VH;
+    width: 61%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%);
+}
+.sec2 .text{
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.sec2 .text .t1{
+    font-size: 5em;
+    z-index: 3;
+}
+.sec2 .text .t2{
+    width: 30vw;
+    font-size: 2.5em;
+    z-index: 3;
+}
+.sec2 .text .bgtext{
+    font-size: 27em;
+    position: absolute;
+    z-index: 1;
+    color: #0B0A08;
+    opacity: 12%;
+    transform: translateX(-8%);
+}
+.sec3{
+    height: 50vh;
+    width:100vw;
+    background-color: #F5821F;
+}
+.sec3 .thingy{
+    position: absolute;
+    left: 0;
+    background-color: #EDC81B;
+    background: url('./assets/img2.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50VH;
+    width: 61%;
+    clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
+}
+.sec3 .text{
+    position: absolute;
+    right:0;
+    width: 40vw;
+    height: 50VH;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.sec3 .text .t1{
+    font-size: 5em;
+    z-index: 3;
+}
+.sec3 .text .t2{
+    width: 30vw;
+    font-size: 2.5em;
+    z-index: 3;
+}
+.sec3 .text .bgtext{
+    font-size: 27em;
+    position: absolute;
+    z-index: 1;
+    color: #0B0A08;
+    opacity: 12%;
+    transform: translateX(-8%);
+}
+
+.sec8{
+    height: 50vh;
+    width:100vw;
+    background-color: #EDC81B;
+}
+.sec8 .thingy{
+    position: absolute;
+    right: 0;
+    background-color: #F5821F;
+    background: url('./assets/sonali.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50VH;
+    width: 61%;
+    clip-path: polygon(36% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.sec8 .text{
+    position: absolute;
+    left: 0%;
+    width: 50vw;
+    height: 50VH;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.sec8 .text .t1{
+    font-size: 5em;
+    z-index: 3;
+}
+.sec8 .text .t2{
+    width: 30vw;
+    font-size: 2.5em;
+    z-index: 3;
+}
+.sec8 .text .bgtext{
+    font-size: 27em;
+    position: absolute;
+    z-index: 1;
+    color: #0B0A08;
+    opacity: 12%;
+    transform: translateX(-8%);
+}
+
+.t2{
+    font-family: "Sofia Sans Extra Condensed", serif;
+}
