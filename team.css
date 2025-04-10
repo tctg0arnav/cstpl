@@ -197,5 +197,6 @@ html body{
     }
     .hero-text h2{
         font-size: 5vh;
+        font-family: "Sofia Sans Extra Condensed", serif;
     }
 }
