@@ -9,6 +9,11 @@
     margin: 0;
     z-index: 1;
 }
+
+img {
+    object-fit: cover;
+}
+
 html, body{
     height: 100%;
 }

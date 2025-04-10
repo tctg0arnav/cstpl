@@ -125,13 +125,15 @@
             imageLinks.forEach(link => {
             const anchor = document.createElement('a');
             anchor.href = link;
-            anchor.setAttribute('width', '600');
-            anchor.setAttribute('height', '400');
+            anchor.setAttribute('data-pswp-width', '600');
+            anchor.setAttribute('data-pswp-height', '400');
             anchor.target = '_blank';
 
             const img = document.createElement('img');
             img.src = link;
             img.alt = '';
+            img.setAttribute('width', '600');
+            img.setAttribute('height', '400');
 
             anchor.appendChild(img);
             gallery.appendChild(anchor);
