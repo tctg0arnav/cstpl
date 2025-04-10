@@ -23,24 +23,46 @@ html body{
     height: 10vh;
     display: flex;
     flex-direction: row;
-    font-size: 2.5em;
+    font-size: 3vw;
     justify-content: space-between;
     align-items: center;
     width: 100vw;
     position: fixed;
-    top: 0;
-    z-index: 1000;
     color: white;
-    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0));
+    background-image: linear-gradient(rgba(0,0,0,0.5)10%,rgba(0,0,0,0.0));
+    z-index: 2;
 }
+
+.navbar .burger {
+    display: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 5vh;
+    transition: 0.5s;
+}
+
 .navbar .logo{
     display: flex;
     width: 15vw;
     height: 10vh;
     align-items: center;
-    padding-left: 20px;
-    margin-top: 20px;
+    padding-left: 2vw;
+    margin-top: 1vh;
 }
+
+.navbar .logo img{
+    height: 125%;
+}
+
 .navbar .text{
     display: flex;
     flex-direction: row;
@@ -54,24 +76,26 @@ html body{
     width: 15vw;
     height: 10vh;
     align-items: center;
-    padding-right: 50px;
+    padding-right: 2vw;
     justify-content: space-between;
     transform: scale(0.9);
 }
-.navbar .socials .b1{
-    background-color: blue;
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
+
+.navbar .socials .bi-youtube{
+    font-size: 4vw;
 }
 
 .navbar a{
     color: white;
-    text-decoration: none;
+    text-decoration: none
+}
+
+.navbar a:hover{
+    text-decoration: underline;
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 255, 0.1), rgba(0, 0, 0, 0.8)), url("assets/img2.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 255, 0.1),  rgba(0, 0, 0, 0.8)), url("assets/img1.jpeg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -80,7 +104,7 @@ html body{
 }
 
 .hero-text {
-    padding-top: 0vh;
+    padding-top: 10vh;
     text-align: center;
     position: absolute;
     top: 50%;
@@ -89,140 +113,89 @@ html body{
     color: white;
 }
 
-.sec2{
-    height: 50VH;
-    width:100vw;
-    background-color: #EDC81B;
+.hero-text h1{
+    font-size: 20vh;
 }
-.sec2 .thingy{
-    position: absolute;
-    right: 0;
-    background-color: #F5821F;
-
-    background: url('./assets/chennai.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 50VH;
-    width: 61%;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%);
-}
-.sec2 .text{
-    position: absolute;
-    width: 50vw;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;    
-}
-.sec2 .text .t1{
-    font-size: 5em;
-    z-index: 3;
-}
-.sec2 .text .t2{
-    width: 30vw;
-    font-size: 2.5em;
-    z-index: 3;
-}
-.sec2 .text .bgtext{
-    font-size: 27em;
-    position: absolute;
-    z-index: 1;
-    color: #0B0A08;
-    opacity: 12%;
-    transform: translateX(-8%);
-}
-.sec3{
-    height: 50vh;
-    width:100vw;
-    background-color: #F5821F;
-}
-.sec3 .thingy{
-    position: absolute;
-    left: 0;
-    background-color: #EDC81B;
-    background: url('./assets/img2.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 50VH;
-    width: 61%;
-    clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
-}
-.sec3 .text{
-    position: absolute;
-    right:0;
-    width: 40vw;
-    height: 50VH;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;    
-}
-.sec3 .text .t1{
-    font-size: 5em;
-    z-index: 3;
-}
-.sec3 .text .t2{
-    width: 30vw;
-    font-size: 2.5em;
-    z-index: 3;
-}
-.sec3 .text .bgtext{
-    font-size: 27em;
-    position: absolute;
-    z-index: 1;
-    color: #0B0A08;
-    opacity: 12%;
-    transform: translateX(-8%);
+.hero-text h2{
+    font-size: 5vh;
 }
 
-.sec8{
-    height: 50vh;
-    width:100vw;
-    background-color: #EDC81B;
-}
-.sec8 .thingy{
-    position: absolute;
-    right: 0;
-    background-color: #F5821F;
-    background: url('./assets/sonali.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 50VH;
-    width: 61%;
-    clip-path: polygon(36% 0%, 100% 0%, 100% 100%, 0% 100%);
-}
-.sec8 .text{
-    position: absolute;
-    left: 0%;
-    width: 50vw;
-    height: 50VH;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;    
-}
-.sec8 .text .t1{
-    font-size: 5em;
-    z-index: 3;
-}
-.sec8 .text .t2{
-    width: 30vw;
-    font-size: 2.5em;
-    z-index: 3;
-}
-.sec8 .text .bgtext{
-    font-size: 27em;
-    position: absolute;
-    z-index: 1;
-    color: #0B0A08;
-    opacity: 12%;
-    transform: translateX(-8%);
+.hero-text span{
+    margin-right: 3vw;
 }
 
-.t2{
+.container{
+    margin-top: 2vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    height: 50%;
+}
+
+.t1{
     font-family: "Sofia Sans Extra Condensed", serif;
+    font-size: 5vh;
+    text-align: justify;
+}
+
+@media (max-width:575px) {
+    .navbar .text {
+        display: none;
+    }
+    .navbar .socials {
+        display: none;
+    }
+    .navbar .burger {
+        display: inline;
+        transition: 0.5s;
+    }
+    .navbar .burger i {
+        font-weight: 900;
+        font-size: 15vw;
+        padding: 3vw;
+    }
+    .navbar .logo img {
+        height: 125%;
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 10vh;
+        transition: 0.5s;
+        text-align: center;
+    }
+    .sidenav a{
+        padding-top: 1vh;
+        padding-left: 1vh;
+        padding-right: 1vh;
+        padding-bottom: 5vh;
+        font-size: 10vh;
+        text-decoration: none;
+        color: white;
+    }
+    .sidenav a:hover{
+        color: #f1f1f1;
+        text-decoration: underline;
+    }
+    .sidenav .closebtn{
+        position: absolute;
+        top: 0;
+        right: 3vw;
+        font-size: 10vw;
+        padding-top: 2vh;
+    }
+    .sidenav i{
+        font-size: 10vw;
+    }
+    .hero-text h1{
+        font-size: 15vh;
+    }
+    .hero-text h2{
+        font-size: 5vh;
+    }
 }

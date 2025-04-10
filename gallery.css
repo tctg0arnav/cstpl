@@ -20,22 +20,46 @@ html body{
     height: 10vh;
     display: flex;
     flex-direction: row;
-    font-size: 2.5em;
+    font-size: 3vw;
     justify-content: space-between;
     align-items: center;
     width: 100vw;
     position: fixed;
     color: white;
-    z-index: 5;
+    background-image: linear-gradient(rgba(0,0,0,0.5)10%,rgba(0,0,0,0.0));
+    z-index: 2;
 }
+
+.navbar .burger {
+    display: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 5vh;
+    transition: 0.5s;
+}
+
 .navbar .logo{
     display: flex;
     width: 15vw;
     height: 10vh;
     align-items: center;
-    padding-left: 20px;
-    margin-top: 20px;
+    padding-left: 2vw;
+    margin-top: 1vh;
 }
+
+.navbar .logo img{
+    height: 125%;
+}
+
 .navbar .text{
     display: flex;
     flex-direction: row;
@@ -49,19 +73,22 @@ html body{
     width: 15vw;
     height: 10vh;
     align-items: center;
-    padding-right: 50px;
+    padding-right: 2vw;
     justify-content: space-between;
     transform: scale(0.9);
 }
-.navbar .socials .b1{
-    background-color: blue;
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
+
+.navbar .socials .bi-youtube{
+    font-size: 4vw;
 }
+
 .navbar a{
     color: white;
-    text-decoration: none;
+    text-decoration: none
+}
+
+.navbar a:hover{
+    text-decoration: underline;
 }
 .container {
     display: flex;
@@ -93,4 +120,68 @@ html body{
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    font-size: 15vh;
+}
+
+@media (max-width:575px) {
+    .navbar .text {
+        display: none;
+    }
+    .navbar .socials {
+        display: none;
+    }
+    .navbar .burger {
+        display: inline;
+        transition: 0.5s;
+    }
+    .navbar .burger i {
+        font-weight: 900;
+        font-size: 15vw;
+        padding: 3vw;
+    }
+    .navbar .logo img {
+        height: 125%;
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 10vh;
+        transition: 0.5s;
+        text-align: center;
+    }
+    .sidenav a{
+        padding-top: 1vh;
+        padding-left: 1vh;
+        padding-right: 1vh;
+        padding-bottom: 5vh;
+        font-size: 10vh;
+        text-decoration: none;
+        color: white;
+    }
+    .sidenav a:hover{
+        color: #f1f1f1;
+        text-decoration: underline;
+    }
+    .sidenav .closebtn{
+        position: absolute;
+        top: 0;
+        right: 3vw;
+        font-size: 10vw;
+        padding-top: 2vh;
+    }
+    .sidenav i{
+        font-size: 10vw;
+    }
+    .hero-text{
+        font-size: 7.5vh;
+    }
+    .container{
+        padding: 0;
+    }
 }
