@@ -131,9 +131,14 @@ html body{
     display: flex;
 }
 
-.article img {
+.article .img {
     height: 100%;
     width: 45%;
+}
+
+.article img{
+    height: 100%;
+    width: 30vw;
 }
 
 .article .text {
@@ -144,7 +149,7 @@ html body{
 }
 
 .article .t1 {
-    font-size: 8vh;
+    font-size: 5vh;
 }
 
 .article .t2 {
