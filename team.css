@@ -278,7 +278,7 @@ html body{
     transform: translateX(-8%);
 }
 
-@media (max-width:575px) {
+@media (max-width:850px) {
     .navbar .text {
         display: none;
     }
