@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chennai Smashers | Gallery</title>
-    <link rel="stylesheet" href="gallery.css">
+    <title>Chennai Smashers | News</title>
+    <link rel="stylesheet" href="news.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -63,20 +63,50 @@
     </div>
     <div class="hero-image">
         <div class="hero-text">
-            <h1>GALLERY</h1>
+            <h1>NEWS</h1>
         </div>
     </div>
-    <div class="container" id="gallery">
+    <div class="container" id="news">
+        <a href="/news/article1.html">
+            <div class="article" id="article1">
+                <img src="assets/articles/article1.jpeg" width="600" height="400">
+                <div class="text">
+                    <div class="t1">
+                        News Headline
+                    </div>
+                    <div class="t3">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi minus assumenda cupiditate earum ad vel? Placeat, ut. Eius corporis molestias a sed vero, voluptatibus laboriosam perferendis qui, officia hic mollitia sapiente minus illum ut laborum.
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="/news/article1.html">
+            <div class="article" id="article1">
+                <img src="assets/articles/article1.jpeg" width="600" height="400">
+                <div class="text">
+                    <div class="t1">
+                        News Headline
+                    </div>
+                    <div class="t3">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi minus assumenda cupiditate earum ad vel? Placeat, ut. Eius corporis molestias a sed vero, voluptatibus laboriosam perferendis qui, officia hic mollitia sapiente minus illum ut laborum.
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="/news/article1.html">
+            <div class="article" id="article1">
+                <img src="assets/articles/article1.jpeg" width="600" height="400">
+                <div class="text">
+                    <div class="t1">
+                        News Headline
+                    </div>
+                    <div class="t3">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi minus assumenda cupiditate earum ad vel? Placeat, ut. Eius corporis molestias a sed vero, voluptatibus laboriosam perferendis qui, officia hic mollitia sapiente minus illum ut laborum.
+                    </div>
+                </div>
+            </div>
+        </a>
     </div>
-    <script type="module">
-        import PhotoSwipeLightbox from './photoswipe-lightbox.esm.min.js';
-        const lightbox = new PhotoSwipeLightbox({
-            gallery: '#gallery',
-            children: 'a',
-            pswpModule: () => import('./photoswipe.esm.min.js')
-        });
-        lightbox.init();
-    </script>
     <script>
         function openNav(){
             document.getElementById("sidenav").style.width = "100vw";
@@ -89,58 +119,6 @@
             document.getElementById("burger").style.display = "inline";
             document.getElementById("logo").style.display = "flex";
         }
-        const imageLinks = [
-            './assets/gallery/gallery1.jpeg',
-            './assets/gallery/gallery2.jpeg',
-            './assets/gallery/gallery3.jpeg',
-            './assets/gallery/gallery4.jpeg',
-            './assets/gallery/gallery5.jpeg',
-            './assets/gallery/gallery6.jpeg',
-            './assets/gallery/gallery7.jpeg',
-            './assets/gallery/gallery8.jpeg',
-            './assets/gallery/gallery9.jpeg',
-            './assets/gallery/gallery10.jpeg',
-            './assets/gallery/gallery11.jpeg',
-            './assets/gallery/gallery12.jpeg',
-            './assets/gallery/gallery13.jpeg',
-            './assets/gallery/gallery14.jpeg',
-            './assets/gallery/gallery15.jpeg',
-            './assets/gallery/gallery16.jpeg',
-            './assets/gallery/gallery17.jpeg',
-            './assets/gallery/gallery18.jpeg',
-            './assets/gallery/gallery19.jpeg',
-            './assets/gallery/gallery20.jpeg',
-            './assets/gallery/gallery21.jpeg',
-            './assets/gallery/gallery22.jpeg',
-            './assets/gallery/gallery23.jpeg',
-            './assets/gallery/gallery24.jpeg',
-            './assets/gallery/gallery25.jpeg',
-            './assets/gallery/gallery26.jpeg',
-            './assets/gallery/gallery27.jpeg',
-            './assets/gallery/gallery28.jpeg'
-        ];
-
-        function populateGallery() {
-            const gallery = document.getElementById('gallery');
-            imageLinks.forEach(link => {
-            const anchor = document.createElement('a');
-            anchor.href = link;
-            anchor.setAttribute('data-pswp-width', '600');
-            anchor.setAttribute('data-pswp-height', '400');
-            anchor.target = '_blank';
-
-            const img = document.createElement('img');
-            img.src = link;
-            img.alt = '';
-            img.setAttribute('width', '600');
-            img.setAttribute('height', '400');
-
-            anchor.appendChild(img);
-            gallery.appendChild(anchor);
-            });
-        }
-
-        window.onload = populateGallery;
     </script>
 </body>
 </html>

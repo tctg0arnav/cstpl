@@ -18,7 +18,7 @@ html, body{
     height: 100%;
 }
 html body{
-    background: #EDC81B;
+    background: #76D0D3;
 }
 
 .navbar {
@@ -95,18 +95,6 @@ html body{
 .navbar a:hover{
     text-decoration: underline;
 }
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5vh;
-    justify-content: space-evenly;
-    margin: auto;
-    zoom: 60%;
-}
-
-.container img {
-    padding: 1vh;
-}
 
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 255, 0.1),  rgba(0, 0, 0, 0.8)), url("assets/img3.jpeg");
@@ -126,6 +114,53 @@ html body{
     transform: translate(-50%, -50%);
     color: white;
     font-size: 15vh;
+}
+
+.container {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.article {
+    width: 100%;
+    background-color: #f1f1f1;
+    height: 30vh;
+    margin-bottom: 3vh;
+    display: flex;
+}
+
+.article img {
+    height: 100%;
+    width: 45%;
+}
+
+.article .text {
+    margin-top: 3vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: 3vh;
+}
+
+.article .t1 {
+    font-size: 8vh;
+}
+
+.article .t2 {
+    font-size: 4vh;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.article .t3 {
+    font-size: 3vh;
+    padding-top: 2vh;
+    font-family: "Sofia Sans Extra Condensed", serif;
+}
+
+a {
+    text-decoration: none;
+    color:#111;
 }
 
 @media (max-width:575px) {
@@ -188,7 +223,22 @@ html body{
     }
     .container{
         padding: 0;
+        margin-top: 3vh;
     }
+    .article{
+        width: 96%;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    .article .t1{
+        font-size: 5vh;
+    }
+
+    .article .t3{
+        font-size: 2vh;
+    }
+
 }
 
 @media (min-width:576px) and (max-width:850px) {
@@ -251,5 +301,19 @@ html body{
     }
     .container{
         padding: 0;
+        margin-top: 3vh;
+    }
+    .article{
+        width: 96%;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    .article .t1{
+        font-size: 5vh;
+    }
+
+    .article .t3{
+        font-size: 2vh;
     }
 }

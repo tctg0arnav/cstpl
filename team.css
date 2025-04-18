@@ -96,7 +96,7 @@ html body{
 
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 255, 0.1),  rgba(0, 0, 0, 0.8)), url("assets/img1.jpeg");
-    height: 100%;
+    height: 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -118,23 +118,164 @@ html body{
 }
 .hero-text h2{
     font-size: 5vh;
+    font-family: "Sofia Sans Extra Condensed", serif;
+}
+
+.hero-text h2 i{
+    display: none;
 }
 
 .hero-text span{
-    margin-right: 3vw;
+    margin-right: 1vw;
+
 }
 
-.container{
-    margin-top: 2vh;
-    margin-left: 20vw;
-    margin-right: 20vw;
-    height: 50%;
-}
-
-.t1{
+.t2{
     font-family: "Sofia Sans Extra Condensed", serif;
     font-size: 5vh;
     text-align: justify;
+}
+
+.sec2{
+    height: 60vh;
+    width:100vw;
+    background-color: #76D0D3;
+}
+.sec2 .thingy{
+    position: absolute;
+    right: 0;
+    background-color: #EA730B;
+    background: url('./assets/gallery/gallery25.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
+    width: 61%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%);
+}
+
+.sec2 .thingy img{
+    display: none;
+}
+
+.sec2 .text{
+    position: absolute;
+    width: 50vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.sec2 .text .t1{
+    font-size: 5vw;
+    z-index: 3;
+}
+.sec2 .text .t2{
+    width: 30vw;
+    font-size: 2.5vw;
+    z-index: 3;
+}
+.sec2 .text .bgtext{
+    font-size: 22vw;
+    position: absolute;
+    z-index: 1;
+    color: #0B0A08;
+    opacity: 10%;
+    transform: translateX(-8%);
+}
+.sec3{
+    height: 60vh;
+    width:100vw;
+    background-color: #EA730B;
+}
+.sec3 .thingy{
+    position: absolute;
+    left: 0;
+    background-color: #F5CC00;
+    background: url('./assets/gallery/gallery16.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
+    width: 61%;
+    clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
+}
+.sec3 .text{
+    position: absolute;
+    right:0;
+    width: 40vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.sec3 .text .t1{
+    font-size: 5vw;
+    z-index: 3;
+}
+.sec3 .text .t2{
+    width: 30vw;
+    font-size: 2.5vw;
+    z-index: 3;
+}
+.sec3 .text .bgtext{
+    font-size: 22vw;
+    position: absolute;
+    z-index: 1;
+    color: #0B0A08;
+    opacity: 10%;
+    transform: transla teX(-8%);
+}
+
+.sec8{
+    height: 60vh;
+    width:100vw;
+    background-color: #F5CC00;
+}
+.sec8 .thingy{
+    position: absolute;
+    right: 0;
+    background-color: #EA730B;
+
+    background: url('./assets/img1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
+    width: 61%;
+    clip-path: polygon(36% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.sec8 .thingy img{
+    display: none;
+}
+.sec8 .text{
+    position: absolute;
+    left: 0%;
+    width: 50vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.sec8 .text .t1{
+    font-size: 5vw;
+    z-index: 3;
+}
+.sec8 .text .t2{
+    width: 30vw;
+    font-size: 2.5vw;
+    z-index: 3;
+}
+.sec8 .text .bgtext{
+    font-size: 22vw;
+    position: absolute;
+    z-index: 1;
+    color: #0B0A08;
+    opacity: 10%;
+    transform: translateX(-8%);
 }
 
 @media (max-width:575px) {
@@ -199,4 +340,75 @@ html body{
         font-size: 5vh;
         font-family: "Sofia Sans Extra Condensed", serif;
     }
+    .hero-text h2 i{
+        display: block;
+        top: 90%;
+    }
+    .hero-image{
+        height: 100%;
+    }
+    .sec2{
+        height: 50vh;
+        margin: 1vh;
+    }
+    .sec2 .thingy{
+        clip-path: none;
+        width: 100%;
+        height: 50vh;
+    }
+    .sec2 .text{
+        z-index: 5;
+        color: white;
+        height: 50vh;
+    }
+    .sec2 .text .t1{
+        font-size: 6vh;
+    }
+    .sec2 .text .bgtext{
+        opacity: 15%;
+        color: white;
+    }
+    .sec3{
+        height: 50vh;
+        margin: 1vh;
+    }
+    .sec3 .thingy{
+        clip-path: none;
+        width: 100%;
+        height: 50vh;
+    }
+    .sec3 .text{
+        z-index: 5;
+        color: white;
+        height: 50vh;
+    }
+    .sec3 .text .t1{
+        font-size: 6vh;
+    }
+    .sec3 .text .bgtext{
+        opacity: 15%;
+        color: white;
+    }
+    .sec8{
+        height: 50vh;
+        margin: 1vh;
+    }
+    .sec8 .thingy{
+        clip-path: none;
+        width: 100%;
+        height: 50vh;
+    }
+    .sec8 .text{
+        z-index: 5;
+        color: white;
+        height: 50vh;
+    }
+    .sec8 .text .t1{
+        font-size: 6vh;
+    }
+    .sec8 .text .bgtext{
+        opacity: 15%;
+        color: white;
+    }
+
 }

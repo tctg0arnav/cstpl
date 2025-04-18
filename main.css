@@ -113,6 +113,7 @@ html body{
     text-decoration: underline;
 }
 
+
 .sec2{
     height: 60vh;
     width:100vw;
@@ -747,7 +748,272 @@ html body{
         width: 90%;
     }
 }
-@media (min-width:576px) and (max-width:767px) {
-}
-@media (min-width:768px) {
+@media (min-width:576px) and (max-width:850px) {
+    .navbar .text {
+        display: none;
+    }
+    .navbar .socials {
+        display: none;
+    }
+    .navbar .burger {
+        display: inline;
+        transition: 0.5s;
+    }
+    .navbar .burger i {
+        font-weight: 900;
+        font-size: 10vw;
+        padding: 3vw;
+    }
+    .navbar .logo img {
+        height: 100%;
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 10vh;
+        transition: 0.5s;
+        text-align: center;
+    }
+    .sidenav a{
+        padding-top: 1vh;
+        padding-left: 1vh;
+        padding-right: 1vh;
+        padding-bottom: 5vh;
+        font-size: 10vh;
+        text-decoration: none;
+        color: white;
+    }
+    .sidenav a:hover{
+        color: #f1f1f1;
+        text-decoration: underline;
+    }
+    .sidenav .closebtn{
+        position: absolute;
+        top: 0;
+        right: 3vw;
+        font-size: 10vw;
+        padding-top: 2vh;
+    }
+    .sidenav i{
+        font-size: 10vw;
+    }
+    .sec1 .back{
+        background: url('./assets/bg2.png');
+        height: 100vh;
+        width: 100vw;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        background-position: center;
+        transform: scale(1);
+    }
+    .sec2{
+        height: 70vh;
+        width:100vw;
+        background-color: #F5CC00;
+        /* padding-bottom: 5vh; */
+    }
+    .sec2 .thingy{
+        background: none;
+        clip-path: none;
+        display: static;
+        position:relative;
+        width: 100%;
+        height: auto;
+    }
+    .sec2 .thingy img{
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+    .sec2 .text{
+        height: 35vh;
+        width: 100%;
+        display:block;
+        justify-content: center;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+        position: static;
+    }
+    .sec2 .text .t1{
+        text-align: center;
+        font-size: 15vw;
+        line-height: 85%;
+    }
+    .sec2 .text .t2{
+        text-align: justify;
+        font-size: 7vw;
+        width: 90%;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 5vh;
+    }
+    .sec2 .text .bgtext{
+        display: none;
+    }
+    .sec3{
+        height: 70vh;
+        width:100vw;
+        background-color: #EA730B;
+        padding-top: 30vh;
+    }
+    .sec3 .thingy{
+        background: none;
+        clip-path: none;
+        display: static;
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .sec3 .thingy img{
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+    .sec3 .text{
+        height: 35vh;
+        width: 100%;
+        display:block;
+        justify-content: center;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+        position: static;
+    }
+    .sec3 .text .t1{
+        text-align: center;
+        font-size: 15vw;
+        line-height: 85%;
+    }
+    .sec3 .text .t2{
+        text-align: justify;
+        font-size: 7vw;
+        width: 90%;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 5vh;
+    }
+    .sec3 .text .bgtext{
+        display: none;
+    }
+    .slider-navigation2 button{
+        display: none;
+    }
+    .sec8{
+        height: 70vh;
+        width:100vw;
+        background-color: #76D0D3;
+        padding-top: 30vh;
+    }
+    .sec8 .thingy{
+        background: none;
+        clip-path: none;
+        display: static;
+        position:relative;
+        width: 100%;
+        height: auto;
+    }
+    .sec8 .thingy img{
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+    .sec8 .text{
+        height: 35vh;
+        width: 100%;
+        display:block;
+        justify-content: center;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        position: static;
+    }
+    .sec8 .text .t1{
+        text-align: center;
+        font-size: 15vw;
+        line-height: 85%;
+    }
+    .sec8 .text .t2{
+        text-align: justify;
+        font-size: 7vw;
+        width: 90%;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 5vh;
+    }
+    .sec8 .text .bgtext{
+        display: none;
+    }
+    .sec5{
+        height: 70vh;
+        width: 100vw;
+        background-color: #F5CC00;
+        align-items: center;
+        padding-top: 25vh;
+    }
+    .sec5 .text .t1{
+        text-align: center;
+        font-size: 15vw;
+        line-height: 85%;
+    }
+    .sec5 .text .t2{
+        text-align: center;
+        font-size: 7vw;
+        width: 90%;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 2vh;
+    }
+    .sec5 .ytembed{
+        height: 50%;
+        width: 90%;
+        display: block;
+        justify-content: center;
+        align-self: center;
+    }
+    .sec4{
+        display: none;
+    }
+    .sec6{
+        height: 100vh;
+        width: 100vw;
+        padding-top: 5vh;
+        display: block;
+        background-color: #EA730B;
+    }
+    .sec6 .text{
+        display: none;
+    }
+    .sec6 .text2{
+        display: block;
+        height: 25vh;
+        width: 100%;
+        display:block;
+        justify-content: center;
+        padding-bottom: 0vh;
+        position: static;
+    }
+    .sec6 .text2 .t1{
+        text-align: center;
+        font-size: 15vw;
+        line-height: 85%;
+    }
+    .sec6 .text2 .t2{
+        text-align: justify;
+        font-size: 7vw;
+        width: 90%;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 2vh;
+    }
+    .sec6 .typeform{
+        height: 60vh;
+        padding-top: 2vh;
+        padding-left: 5vw;
+        width: 90%;
+    }
 }
