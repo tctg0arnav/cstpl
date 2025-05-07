@@ -281,7 +281,13 @@ html body{
     align-items: center;
     overflow-x: hidden;
     flex-shrink: 0;
+    text-decoration: none;
 }
+
+.sec4 .articles a{
+    text-decoration: none;
+}
+
 .sec4 .articles .scroll{
     height: fit-content;
     width: 70vw;
@@ -302,7 +308,7 @@ html body{
     cursor: pointer;
 }
 .sec4 .articles .box img{
-    width: 100%;
+    width: 18vw;
 }
 .sec4 .articles .box .bt {
     padding: 1vw;
@@ -314,7 +320,7 @@ html body{
 }
 .sec4 .articles .box .bt .t{
     font-size: 1.7vw;
-    
+    color: #111;
 }
 .sec4 .articles .box .bt .f{
     color: #EA730B;
